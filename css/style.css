@@ -189,6 +189,60 @@ h1, h2, h3 {
     border-bottom-color: var(--accent);
 }
 
+/* ---------- Dropdown ---------- */
+.has-dropdown {
+    position: relative;
+}
+
+.has-dropdown > a::after {
+    content: " ▾";
+    font-size: 0.75rem;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark);
+    border-top: 2px solid var(--accent);
+    border-radius: 0 0 var(--radius) var(--radius);
+    min-width: 160px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    z-index: 200;
+    padding: 6px 0;
+    list-style: none;
+    margin: 0;
+    flex-direction: column;
+    gap: 0;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #e8e8e8;
+    border-bottom: none;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.dropdown a:hover {
+    background: rgba(255,255,255,0.08);
+    color: var(--accent);
+    border-bottom: none;
+}
+
+/* Open on hover (desktop) and focus-within (keyboard) */
+.has-dropdown:hover .dropdown,
+.has-dropdown:focus-within .dropdown {
+    display: flex;
+}
+
 .cart-count {
     display: inline-block;
     background: var(--accent);
@@ -796,6 +850,33 @@ h1, h2, h3 {
         flex-direction: column;
         align-items: center;
         gap: 14px;
+    }
+
+    /* Dropdown inside mobile menu */
+    .has-dropdown > a::after {
+        content: " ▾";
+    }
+
+    .dropdown {
+        position: static;
+        transform: none;
+        display: none;
+        background: rgba(255,255,255,0.05);
+        border-top: 1px solid rgba(255,255,255,0.1);
+        border-radius: 0;
+        box-shadow: none;
+        min-width: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .has-dropdown.open .dropdown {
+        display: flex;
+    }
+
+    .dropdown a {
+        padding: 10px 30px;
+        font-size: 0.95rem;
     }
 
     .hero h1 {

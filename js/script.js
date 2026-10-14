@@ -1,7 +1,8 @@
 /* ==========================================================
-   Your Butchery - Main JavaScript
-   Features: mobile menu, product filter, weight-based pricing,
-   quantities, cart (saved in the browser), order and contact forms
+   Ubuntu-Butchery - Main JavaScript
+   Features: mobile menu, dropdown nav, product filter,
+   weight-based pricing, quantities, cart (saved in the browser),
+   order and contact forms
    ========================================================== */
 
 const CART_KEY = "butcheryCart";
@@ -50,6 +51,24 @@ function setupMobileMenu() {
     toggle.addEventListener("click", () => {
         const isOpen = nav.classList.toggle("open");
         toggle.setAttribute("aria-expanded", isOpen);
+    });
+
+    // On mobile, tap the Products link to open/close its dropdown
+    // instead of navigating (desktop uses CSS :hover/:focus-within)
+    const dropdownParents = nav.querySelectorAll(".has-dropdown");
+    dropdownParents.forEach((item) => {
+        const link = item.querySelector(":scope > a");
+        link.addEventListener("click", (e) => {
+            // Only intercept on mobile (hamburger visible)
+            if (window.getComputedStyle(toggle).display === "none") return;
+            e.preventDefault();
+            const isOpen = item.classList.toggle("open");
+            // Close other open dropdowns
+            dropdownParents.forEach((other) => {
+                if (other !== item) other.classList.remove("open");
+            });
+            link.setAttribute("aria-expanded", isOpen);
+        });
     });
 }
 

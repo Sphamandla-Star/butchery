@@ -14,11 +14,18 @@
         <div class="container nav-wrapper">
             <a href="index.html" class="logo">Mokoka Butchery<span>.</span></a>
             <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
+                    <li class="has-dropdown">
+                        <a href="products.html" aria-haspopup="true" aria-expanded="false">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="products.html#beef">Beef</a></li>
+                            <li><a href="products.html#pork-chops">Pork</a></li>
+                            <li><a href="products.html#chicken">Chicken</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="products.html#cart" class="cart-link">Cart <span class="cart-count">0</span></a></li>
                 </ul>
