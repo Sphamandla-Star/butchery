@@ -1,0 +1,5 @@
+# Local files that should not be shared
+.DS_Store
+Thumbs.db
+*.log
+*.bak

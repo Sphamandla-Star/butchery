@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Your Butchery Name for orders, questions, or directions.">
+    <title>Contact Us | Your Butchery Name</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">Your Butchery<span>.</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                    <li><a href="products.html#cart" class="cart-link">Cart <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Have a question or a special request? We would love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info + Form -->
+    <section class="section">
+        <div class="container contact-grid">
+
+            <div class="contact-info">
+                <h2>Visit or Call Us</h2>
+
+                <div class="info-block">
+                    <h3>Address</h3>
+                    <p>123 Main Street<br>Suburb, City, 1500<br>South Africa</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+27000000000">+27 00 000 0000</a></p>
+                </div>
+
+                <div class="info-block">
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/27000000000" target="_blank" rel="noopener">Chat with us on WhatsApp</a></p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@yourbutchery.co.za">info@yourbutchery.co.za</a></p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Opening Hours</h3>
+                    <table class="hours-table">
+                        <tr><td>Monday to Friday</td><td>08:00 - 17:00</td></tr>
+                        <tr><td>Saturday</td><td>08:00 - 14:00</td></tr>
+                        <tr><td>Sunday</td><td>Closed</td></tr>
+                    </table>
+                </div>
+
+                <div class="info-block">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form" action="php/send_message.php" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="c-name">Full Name *</label>
+                        <input type="text" id="c-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-email">Email *</label>
+                        <input type="email" id="c-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-phone">Phone (optional)</label>
+                        <input type="tel" id="c-phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="c-subject">Subject</label>
+                        <select id="c-subject" name="subject">
+                            <option value="general">General enquiry</option>
+                            <option value="order">Bulk or special order</option>
+                            <option value="catering">Catering or events</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-message">Message *</label>
+                        <textarea id="c-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+        <!-- Replace the src with your own embed code from Google Maps: Share > Embed a map -->
+        <iframe
+            title="Our location on Google Maps"
+            src="https://www.google.com/maps?q=Johannesburg&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Your Butchery</h3>
+                <p>Quality meat, served with care.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mokoka Butchery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our meat products, choose your weight, and add to your order.">
+    <title>Products | Mokoka Butchery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">Mokoka Butchery<span>.</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#cart" class="cart-link">Cart <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Choose your cut, pick your weight, and add it to your order. Prices update automatically.</p>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-bar">
+        <div class="container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="beef">Beef</button>
+            <button class="filter-btn" data-filter="pork">Pork</button>
+            <button class="filter-btn" data-filter="lamb">Lamb</button>
+            <button class="filter-btn" data-filter="chicken">Chicken</button>
+            <button class="filter-btn" data-filter="specials">Specials</button>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="product-grid" id="product-grid">
+
+                <!-- Product 1 -->
+                <article class="product-card" id="boerewors" data-category="specials">
+                    <img src="images/boerewors.jpg" alt="Homemade boerewors">
+                    <div class="product-info">
+                        <h3 class="product-name">Homemade Boerewors</h3>
+                        <p class="product-desc">Our family recipe, coarse ground and spiced just right.</p>
+                        <p class="product-price-per-kg">R <span>110.00</span> / kg</p>
+
+                        <label for="weight-boerewors">Weight</label>
+                        <select id="weight-boerewors" class="weight-select">
+                            <option value="500">500 g</option>
+                            <option value="1000">1 kg</option>
+                            <option value="2000">2 kg</option>
+                            <option value="5000">5 kg</option>
+                        </select>
+
+                        <p class="product-total">Price: <strong class="total-price">R 000.00</strong></p>
+
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1" max="20" aria-label="Quantity">
+                            <button class="btn btn-primary add-to-cart" data-id="boerewors" data-name="Homemade Boerewors" data-price-per-kg="110.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card" id="beef" data-category="beef">
+                    <img src="images/ribeye.jpg" alt="Beef ribeye steak">
+                    <div class="product-info">
+                        <h3 class="product-name">Beef Ribeye</h3>
+                        <p class="product-desc">Well marbled and tender. Ideal for the braai.</p>
+                        <p class="product-price-per-kg">R <span>250.00</span> / kg</p>
+
+                        <label for="weight-ribeye">Weight</label>
+                        <select id="weight-ribeye" class="weight-select">
+                            <option value="500">500 g</option>
+                            <option value="1000">1 kg</option>
+                            <option value="2000">2 kg</option>
+                        </select>
+
+                        <p class="product-total">Price: <strong class="total-price">R 000.00</strong></p>
+
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1" max="20" aria-label="Quantity">
+                            <button class="btn btn-primary add-to-cart" data-id="ribeye" data-name="Beef Ribeye" data-price-per-kg="250.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card" id="beef-mince" data-category="beef">
+                    <img src="images/mince.jpg" alt="Fresh beef mince">
+                    <div class="product-info">
+                        <h3 class="product-name">Beef Mince</h3>
+                        <p class="product-desc">Freshly minced daily from lean cuts.</p>
+                        <p class="product-price-per-kg">R <span>95.00</span> / kg</p>
+
+                        <label for="weight-mince">Weight</label>
+                        <select id="weight-mince" class="weight-select">
+                            <option value="500">500 g</option>
+                            <option value="1000">1 kg</option>
+                            <option value="2000">2 kg</option>
+                            <option value="5000">5 kg</option>
+                        </select>
+
+                        <p class="product-total">Price: <strong class="total-price">R 000.00</strong></p>
+
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1" max="20" aria-label="Quantity">
+                            <button class="btn btn-primary add-to-cart" data-id="beef-mince" data-name="Beef Mince" data-price-per-kg="95.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card" id="pork-chops" data-category="pork">
+                    <img src="images/pork-chops.jpg" alt="Pork chops">
+                    <div class="product-info">
+                        <h3 class="product-name">Pork Chops</h3>
+                        <p class="product-desc">Thick-cut, bone-in chops from local farms.</p>
+                        <p class="product-price-per-kg">R <span>105.00</span> / kg</p>
+
+                        <label for="weight-pork">Weight</label>
+                        <select id="weight-pork" class="weight-select">
+                            <option value="500">500 g</option>
+                            <option value="1000">1 kg</option>
+                            <option value="2000">2 kg</option>
+                        </select>
+
+                        <p class="product-total">Price: <strong class="total-price">R 000.00</strong></p>
+
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1" max="20" aria-label="Quantity">
+                            <button class="btn btn-primary add-to-cart" data-id="pork-chops" data-name="Pork Chops" data-price-per-kg="105.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="product-card" id="lamb-chops" data-category="lamb">
+                    <img src="images/lamb-chops.jpg" alt="Lamb chops">
+                    <div class="product-info">
+                        <h3 class="product-name">Lamb Chops</h3>
+                        <p class="product-desc">Tender loin chops, perfect for grilling.</p>
+                        <p class="product-price-per-kg">R <span>170.00</span> / kg</p>
+
+                        <label for="weight-lamb">Weight</label>
+                        <select id="weight-lamb" class="weight-select">
+                            <option value="500">500 g</option>
+                            <option value="1000">1 kg</option>
+                            <option value="2000">2 kg</option>
+                        </select>
+
+                        <p class="product-total">Price: <strong class="total-price">R 000.00</strong></p>
+
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1" max="20" aria-label="Quantity">
+                            <button class="btn btn-primary add-to-cart" data-id="lamb-chops" data-name="Lamb Chops" data-price-per-kg="170.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="product-card" id="chicken" data-category="chicken">
+                    <img src="images/chicken.jpg" alt="Fresh whole chicken">
+                    <div class="product-info">
+                        <h3 class="product-name">Whole Chicken</h3>
+                        <p class="product-desc">Fresh, whole birds. Ask us to cut them up for you.</p>
+                        <p class="product-price-per-kg">R <span>70.00</span> / kg</p>
+
+                        <label for="weight-chicken">Weight</label>
+                        <select id="weight-chicken" class="weight-select">
+                            <option value="1000">1 kg</option>
+                            <option value="2000">2 kg</option>
+                            <option value="3000">3 kg</option>
+                        </select>
+
+                        <p class="product-total">Price: <strong class="total-price">R 000.00</strong></p>
+
+                        <div class="product-actions">
+                            <input type="number" class="qty-input" value="1" min="1" max="20" aria-label="Quantity">
+                            <button class="btn btn-primary add-to-cart" data-id="chicken" data-name="Whole Chicken" data-price-per-kg="70.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart & Order Section -->
+    <section class="section section-alt" id="cart">
+        <div class="container">
+            <h2 class="section-title">Your Order</h2>
+
+            <div class="cart-wrapper">
+                <div class="cart-items">
+                    <p class="cart-empty">Your cart is empty. Add some products above.</p>
+                    <table class="cart-table" hidden>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Weight</th>
+                                <th>Qty</th>
+                                <th>Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-body"></tbody>
+                    </table>
+                </div>
+
+                <div class="cart-summary">
+                    <h3>Order Total</h3>
+                    <p class="cart-total">R <span id="cart-total">0.00</span></p>
+
+                    <form id="order-form" action="php/submit_order.php" method="POST" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email (optional)</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="collection">Collection or Delivery *</label>
+                            <select id="collection" name="collection" required>
+                                <option value="collection">Collect from store</option>
+                                <option value="delivery">Delivery</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Special Instructions</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="e.g. cut into cubes, thinner slices"></textarea>
+                        </div>
+
+                        <!-- Filled in by JavaScript before submitting -->
+                        <input type="hidden" name="cart_data" id="cart-data">
+
+                        <button type="submit" class="btn btn-primary btn-block">Submit Order Request</button>
+                        <p class="form-note">This is a request. We will confirm the final price and availability with you.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Mokako Butchery</h3>
+                <p>Quality meat, served with care.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mokoka Butchery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
