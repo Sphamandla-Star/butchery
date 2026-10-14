@@ -1,5 +1,5 @@
 /* ==========================================================
-   Your Butchery - Main Stylesheet
+   Ubuntu-Butchery - Main Stylesheet
    ========================================================== */
 
 /* ---------- Base & Variables ---------- */
@@ -37,7 +37,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: "Open Sans", "Segoe UI", Roboto, Arial, sans-serif;
     color: var(--text);
     background: var(--white);
     line-height: 1.6;
@@ -62,6 +62,7 @@ h1, h2, h3 {
     line-height: 1.25;
     color: var(--dark);
     margin-top: 0;
+    font-family: "Playfair Display", Georgia, serif;
 }
 
 .container {
@@ -273,7 +274,7 @@ h1, h2, h3 {
     color: var(--white);
     background:
         linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7)),
-        linear-gradient(135deg, #8b1e1e, #2b2b2b);
+        url("../images/hero-meat-board.jpg") center/cover no-repeat;
     padding: 40px 20px;
 }
 
@@ -941,4 +942,139 @@ h1, h2, h3 {
 .video-card p {
     margin: 0 20px 20px;
     color: var(--muted);
+}
+
+/* ---------- Language Toggle Button ---------- */
+.lang-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 16px;
+    transition: background var(--transition), color var(--transition);
+    flex-shrink: 0;
+}
+
+.lang-btn:hover {
+    background: var(--accent);
+    color: var(--dark);
+}
+
+/* ---------- Services List (Home page) ---------- */
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.services-list li {
+    padding: 14px 20px 14px 48px;
+    background: var(--white);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--accent);
+    box-shadow: var(--shadow);
+    position: relative;
+    font-size: 1rem;
+}
+
+.services-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 16px;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* ---------- Useful Links List (Home page) ---------- */
+.useful-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.useful-links-list li a {
+    display: block;
+    padding: 12px 18px;
+    background: var(--white);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--primary);
+    box-shadow: var(--shadow);
+    color: var(--primary);
+    font-weight: 500;
+    transition: background var(--transition), color var(--transition);
+}
+
+.useful-links-list li a:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* ---------- Address in footer ---------- */
+.site-footer address {
+    font-style: normal;
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-top: 8px;
+}
+
+.site-footer address a {
+    color: #ccc;
+}
+
+.site-footer address a:hover {
+    color: var(--accent);
+}
+
+/* ---------- Team grid 4 cards ---------- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+/* ---------- Sitemap page ---------- */
+.sitemap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+}
+
+.sitemap-group {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    border-top: 3px solid var(--accent);
+}
+
+.sitemap-group h2 {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+    color: var(--dark);
+}
+
+.sitemap-group ul {
+    list-style: disc;
+    padding-left: 18px;
+    margin: 0;
+}
+
+.sitemap-group li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    color: var(--text);
 }

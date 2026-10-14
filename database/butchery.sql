@@ -1,5 +1,5 @@
 -- ==========================================================
--- Your Butchery - Database Setup
+-- Ubuntu-Butchery - Database Setup
 -- Import this file in phpMyAdmin (Import tab) or run it in the SQL tab.
 -- ==========================================================
 
@@ -67,3 +67,17 @@ INSERT INTO products (id, name, price_per_kg, is_active) VALUES
     ('lamb-chops',  'Lamb Chops',         240.00, 1),
     ('chicken',     'Whole Chicken',       75.00, 1)
 ON DUPLICATE KEY UPDATE name = VALUES(name);
+
+-- Admin users table (used by admin/login.php)
+CREATE TABLE IF NOT EXISTS admins (
+    id            INT UNSIGNED  AUTO_INCREMENT PRIMARY KEY,
+    username      VARCHAR(50)   NOT NULL UNIQUE,
+    password_hash VARCHAR(255)  NOT NULL
+) ENGINE=InnoDB;
+
+-- Demo admin account.
+-- Username: admin  |  Password: admin123  (DEMO ONLY — change before going live)
+-- Hash generated with: password_hash('admin123', PASSWORD_DEFAULT)
+INSERT INTO admins (username, password_hash) VALUES
+    ('admin', '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7XuurNSm')
+ON DUPLICATE KEY UPDATE username = VALUES(username);

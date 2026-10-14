@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse our meat products, choose your weight, and add to your order.">
-    <title>Products | Mokoka Butchery</title>
+    <meta name="description" content="Browse Ubuntu-Butchery meat products — beef, pork, lamb, chicken and specials. Choose your weight and order online.">
+    <title>Products | Ubuntu-Butchery</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,44 +16,45 @@
     <!-- Navigation -->
     <header class="site-header">
         <div class="container nav-wrapper">
-            <a href="index.html" class="logo">Mokoka Butchery<span>.</span></a>
+            <a href="index.html" class="logo">Ubuntu-Butchery<span>.</span></a>
             <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
             <nav class="main-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
                     <li class="has-dropdown">
-                        <a href="products.html" class="active" aria-haspopup="true" aria-expanded="false">Products</a>
+                        <a href="products.html" class="active" aria-haspopup="true" aria-expanded="false" data-i18n="nav.products">Products</a>
                         <ul class="dropdown">
-                            <li><a href="#beef">Beef</a></li>
-                            <li><a href="#pork-chops">Pork</a></li>
-                            <li><a href="#chicken">Chicken</a></li>
+                            <li><a href="#beef" data-i18n="nav.beef">Beef</a></li>
+                            <li><a href="#pork-chops" data-i18n="nav.pork">Pork</a></li>
+                            <li><a href="#chicken" data-i18n="nav.chicken">Chicken</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="#cart" class="cart-link">Cart <span class="cart-count">0</span></a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+                    <li><a href="#cart" class="cart-link"><span data-i18n="nav.cart">Cart</span> <span class="cart-count">0</span></a></li>
                 </ul>
             </nav>
+            <button id="lang-toggle" class="lang-btn" aria-label="Switch to isiZulu" data-lang="en">ZU</button>
         </div>
     </header>
 
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Our Products</h1>
-            <p>Choose your cut, pick your weight, and add it to your order. Prices update automatically.</p>
+            <h1 data-i18n="products.header.h1">Our Products</h1>
+            <p data-i18n="products.header.p">Choose your cut, pick your weight, and add it to your order. Prices update automatically.</p>
         </div>
     </section>
 
     <!-- Category Filter -->
     <section class="category-bar">
         <div class="container">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="beef">Beef</button>
-            <button class="filter-btn" data-filter="pork">Pork</button>
-            <button class="filter-btn" data-filter="lamb">Lamb</button>
-            <button class="filter-btn" data-filter="chicken">Chicken</button>
-            <button class="filter-btn" data-filter="specials">Specials</button>
+            <button class="filter-btn active" data-filter="all" data-i18n="products.filter.all">All</button>
+            <button class="filter-btn" data-filter="beef" data-i18n="products.filter.beef">Beef</button>
+            <button class="filter-btn" data-filter="pork" data-i18n="products.filter.pork">Pork</button>
+            <button class="filter-btn" data-filter="lamb" data-i18n="products.filter.lamb">Lamb</button>
+            <button class="filter-btn" data-filter="chicken" data-i18n="products.filter.chicken">Chicken</button>
+            <button class="filter-btn" data-filter="specials" data-i18n="products.filter.specials">Specials</button>
         </div>
     </section>
 
@@ -274,31 +279,40 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <h3>Mokako Butchery</h3>
+                <h3>Ubuntu-Butchery</h3>
                 <p>Quality meat, served with care.</p>
+                <address>
+                    Vanderbijlpark SE5, 1911<br>
+                    Gauteng, South Africa<br>
+                    <a href="tel:+27719428917">071 942 8917</a>
+                </address>
             </div>
             <div>
-                <h3>Quick Links</h3>
+                <h3 data-i18n="footer.quicklinks">Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
                 </ul>
             </div>
             <div>
-                <h3>Follow Us</h3>
+                <h3 data-i18n="footer.followus">Follow Us</h3>
                 <ul class="social-links">
-                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-                    <li><a href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+                    <!-- TODO: add real link -->
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <!-- TODO: add real link -->
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://wa.me/27719428917" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Mokoka Butchery. All rights reserved.</p>
+            <p data-i18n="footer.copyright">&copy; 2026 Ubuntu-Butchery. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 </html>

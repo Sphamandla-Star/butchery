@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ubuntu-Butchery brand style guide — colours, fonts, buttons and layout rules.">
+    <title>Style Guide | Ubuntu-Butchery</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .sg-section { padding: 50px 0; border-bottom: 1px solid var(--border); }
+        .sg-section:last-child { border-bottom: none; }
+        .sg-section h2 { margin-bottom: 28px; }
+        .swatch-row { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+        .swatch { width: 140px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+        .swatch-colour { height: 80px; }
+        .swatch-label { padding: 10px 12px; background: var(--white); font-size: 0.82rem; }
+        .swatch-label strong { display: block; font-size: 0.9rem; }
+        .font-demo-serif { font-family: "Playfair Display", Georgia, serif; font-size: 2rem; font-weight: 700; }
+        .font-demo-sans { font-family: "Open Sans", sans-serif; font-size: 1rem; }
+        .btn-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-top: 16px; }
+        .sg-table { width: 100%; border-collapse: collapse; }
+        .sg-table th, .sg-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); text-align: left; font-size: 0.95rem; }
+        .sg-table th { background: var(--light); font-family: "Playfair Display", Georgia, serif; }
+        code { background: var(--light); padding: 2px 6px; border-radius: 4px; font-size: 0.88rem; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">Ubuntu-Butchery<span>.</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-dropdown">
+                        <a href="products.html" aria-haspopup="true" aria-expanded="false">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="products.html#beef">Beef</a></li>
+                            <li><a href="products.html#pork-chops">Pork</a></li>
+                            <li><a href="products.html#chicken">Chicken</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="products.html#cart" class="cart-link">Cart <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Brand Style Guide</h1>
+            <p>Ubuntu-Butchery — design standards for consistent presentation</p>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <!-- Colours -->
+        <section class="sg-section">
+            <h2>Colour Palette</h2>
+            <div class="swatch-row">
+                <div class="swatch">
+                    <div class="swatch-colour" style="background:#8b1e1e;"></div>
+                    <div class="swatch-label"><strong>Primary</strong><code>#8b1e1e</code><br>Buttons, nav bar, header</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-colour" style="background:#6a1515;"></div>
+                    <div class="swatch-label"><strong>Primary Dark</strong><code>#6a1515</code><br>Hover states</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-colour" style="background:#d4a24c;"></div>
+                    <div class="swatch-label"><strong>Accent / Gold</strong><code>#d4a24c</code><br>Highlights, underlines</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-colour" style="background:#2b2b2b;"></div>
+                    <div class="swatch-label"><strong>Dark</strong><code>#2b2b2b</code><br>Nav background, headings</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-colour" style="background:#faf7f2; border:1px solid #e6dfd3;"></div>
+                    <div class="swatch-label"><strong>Light / Warm White</strong><code>#faf7f2</code><br>Alt section backgrounds</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-colour" style="background:#333333;"></div>
+                    <div class="swatch-label"><strong>Text</strong><code>#333333</code><br>Body copy</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-colour" style="background:#6b6b6b;"></div>
+                    <div class="swatch-label"><strong>Muted</strong><code>#6b6b6b</code><br>Subtitles, captions</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-colour" style="background:#e6dfd3; border:1px solid #ccc;"></div>
+                    <div class="swatch-label"><strong>Border</strong><code>#e6dfd3</code><br>Cards, table lines</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section class="sg-section">
+            <h2>Typography</h2>
+            <table class="sg-table">
+                <thead><tr><th>Role</th><th>Font</th><th>Weight</th><th>Fallback</th></tr></thead>
+                <tbody>
+                    <tr><td>Headings (h1, h2, h3)</td><td>Playfair Display</td><td>600 / 700</td><td>Georgia, serif</td></tr>
+                    <tr><td>Body copy</td><td>Open Sans</td><td>400 / 500</td><td>Segoe UI, Roboto, Arial, sans-serif</td></tr>
+                    <tr><td>Buttons</td><td>Open Sans</td><td>600</td><td>Arial, sans-serif</td></tr>
+                </tbody>
+            </table>
+            <p class="font-demo-serif" style="margin-top:24px;">Playfair Display — Heading Example</p>
+            <p class="font-demo-sans">Open Sans — Body text example. Fresh meat, cut right every day.</p>
+
+            <h3 style="margin-top:28px;">Heading Hierarchy</h3>
+            <table class="sg-table">
+                <thead><tr><th>Tag</th><th>Size</th><th>Usage</th></tr></thead>
+                <tbody>
+                    <tr><td><code>h1</code></td><td>3rem (hero) / 2.6rem (page header)</td><td>One per page — main page title</td></tr>
+                    <tr><td><code>h2</code></td><td>2rem</td><td>Section titles</td></tr>
+                    <tr><td><code>h3</code></td><td>1.1–1.25rem</td><td>Card headings, product names, sub-labels</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Buttons -->
+        <section class="sg-section">
+            <h2>Buttons</h2>
+            <div class="btn-row">
+                <a href="#" class="btn btn-primary">Primary Button</a>
+                <a href="#" class="btn btn-outline">Outline Button</a>
+            </div>
+            <table class="sg-table" style="margin-top:20px;">
+                <thead><tr><th>Class</th><th>Use</th><th>Background</th><th>Text</th></tr></thead>
+                <tbody>
+                    <tr><td><code>.btn-primary</code></td><td>Main call-to-action</td><td><code>#8b1e1e</code></td><td>White</td></tr>
+                    <tr><td><code>.btn-outline</code></td><td>Secondary action</td><td>Transparent</td><td><code>#8b1e1e</code></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Spacing & Layout -->
+        <section class="sg-section">
+            <h2>Spacing &amp; Layout</h2>
+            <table class="sg-table">
+                <thead><tr><th>Token</th><th>Value</th><th>Used for</th></tr></thead>
+                <tbody>
+                    <tr><td>Section padding</td><td><code>70px 0</code></td><td>All <code>.section</code> blocks</td></tr>
+                    <tr><td>Container max-width</td><td><code>1200px</code> at 90% width</td><td>All page content</td></tr>
+                    <tr><td>Border radius</td><td><code>10px</code></td><td>Cards, buttons, inputs</td></tr>
+                    <tr><td>Card shadow</td><td><code>0 4px 14px rgba(0,0,0,0.08)</code></td><td>Product cards, feature cards</td></tr>
+                    <tr><td>Transition</td><td><code>0.25s ease</code></td><td>All hover effects</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Logo Rules -->
+        <section class="sg-section">
+            <h2>Logo Rules</h2>
+            <p>The logo is a text mark: <strong style="font-family:'Playfair Display',Georgia,serif; color:#8b1e1e;">Ubuntu-Butchery<span style="color:#d4a24c;">.</span></strong></p>
+            <ul>
+                <li>Always use the exact spelling: <strong>Ubuntu-Butchery</strong> (capital U, capital B, hyphen)</li>
+                <li>The gold dot <strong style="color:#d4a24c;">.</strong> after the name is part of the logo</li>
+                <li>On dark backgrounds: white text, gold dot</li>
+                <li>On light backgrounds: dark (<code>#2b2b2b</code>) text, gold dot</li>
+                <li>Minimum font size: 1.2rem</li>
+                <li>Do not change the colours or remove the dot</li>
+            </ul>
+        </section>
+
+        <!-- Responsive Breakpoints -->
+        <section class="sg-section">
+            <h2>Responsive Breakpoints</h2>
+            <table class="sg-table">
+                <thead><tr><th>Breakpoint</th><th>Target device</th><th>Key changes</th></tr></thead>
+                <tbody>
+                    <tr><td><code>max-width: 900px</code></td><td>Tablet</td><td>Two-column layouts stack to single column</td></tr>
+                    <tr><td><code>max-width: 768px</code></td><td>Mobile</td><td>Hamburger menu, reduced font sizes, dropdown inside menu</td></tr>
+                    <tr><td><code>max-width: 480px</code></td><td>Small phone</td><td>Single-column product grid, simplified cart table</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div><!-- /container -->
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Ubuntu-Butchery</h3>
+                <p>Quality meat, served with care.</p>
+                <address>
+                    Vanderbijlpark SE5, 1911<br>
+                    Gauteng, South Africa<br>
+                    <a href="tel:+27719428917">071 942 8917</a>
+                </address>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <!-- TODO: add real link -->
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    <!-- TODO: add real link -->
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://wa.me/27719428917" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ubuntu-Butchery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

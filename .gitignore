@@ -1,5 +1,17 @@
-# Local files that should not be shared
+﻿# OS files
 .DS_Store
 Thumbs.db
+
+# Editor files
 *.log
 *.bak
+.vscode/
+.idea/
+
+# PHP config with real credentials
+php/db.local.php
+
+# Environment files
+.env
+*.env
+
