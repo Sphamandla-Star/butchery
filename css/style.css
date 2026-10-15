@@ -1,5 +1,5 @@
 /* ==========================================================
-   Ubuntu-Butchery - Main Stylesheet
+   Mokoka Butcher - Main Stylesheet
    ========================================================== */
 
 /* ---------- Base & Variables ---------- */
@@ -201,7 +201,11 @@ h1, h2, h3 {
 }
 
 .dropdown {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
     top: calc(100% + 10px);
     left: 50%;
@@ -215,8 +219,8 @@ h1, h2, h3 {
     padding: 6px 0;
     list-style: none;
     margin: 0;
-    flex-direction: column;
     gap: 0;
+    transition: opacity var(--transition), visibility var(--transition);
 }
 
 .dropdown li {
@@ -241,7 +245,9 @@ h1, h2, h3 {
 /* Open on hover (desktop) and focus-within (keyboard) */
 .has-dropdown:hover .dropdown,
 .has-dropdown:focus-within .dropdown {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .cart-count {
@@ -861,7 +867,11 @@ h1, h2, h3 {
     .dropdown {
         position: static;
         transform: none;
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        max-height: 0;
+        overflow: hidden;
         background: rgba(255,255,255,0.05);
         border-top: 1px solid rgba(255,255,255,0.1);
         border-radius: 0;
@@ -869,10 +879,14 @@ h1, h2, h3 {
         min-width: 0;
         width: 100%;
         padding: 0;
+        transition: opacity var(--transition), visibility var(--transition), max-height 0.3s ease;
     }
 
     .has-dropdown.open .dropdown {
-        display: flex;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        max-height: 200px;
     }
 
     .dropdown a {

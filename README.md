@@ -1,4 +1,4 @@
-# Ubuntu-Butchery
+# Mokoka Butcher
 
 > A full-stack butchery website — Web Development 3.2 assignment  
 > **Vaal University of Technology · Due 16 October 2026**
@@ -25,7 +25,7 @@
 
 ## Project Overview
 
-Ubuntu-Butchery is a responsive, bilingual (English / isiZulu) multi-page website for a local butchery in Vanderbijlpark SE5, Gauteng. Customers can browse meat products, calculate prices by weight, build an order cart, and send enquiries — all from the browser. The site runs on a local XAMPP server.
+Mokoka Butcher is a responsive, bilingual (English / isiZulu) multi-page website for a local butchery in Vanderbijlpark SE5, Gauteng. Customers can browse meat products, calculate prices by weight, build an order cart, and send enquiries — all from the browser. The site runs on a local XAMPP server.
 
 ---
 
@@ -33,7 +33,7 @@ Ubuntu-Butchery is a responsive, bilingual (English / isiZulu) multi-page websit
 
 | Field | Value |
 |---|---|
-| **Business name** | Ubuntu-Butchery |
+| **Business name** | Mokoka Butcher |
 | **Address** | Vanderbijlpark SE5, 1911, Gauteng, South Africa |
 | **Phone** | 071 942 8917 |
 | **WhatsApp** | [wa.me/27719428917](https://wa.me/27719428917) |
@@ -215,7 +215,7 @@ See [`style-guide.html`](style-guide.html) for the full visual reference.
 ## Sitemap
 
 ```
-Ubuntu-Butchery
+Mokoka Butcher
 │
 ├── Home                index.html
 ├── About Us            about.html
@@ -259,5 +259,5 @@ The site supports **English** and **isiZulu**. A toggle button (EN / ZU) in the 
 
 ---
 
-*Ubuntu-Butchery · Vanderbijlpark SE5, 1911, Gauteng, South Africa*  
-*© 2026 Ubuntu-Butchery. All rights reserved.*
+*Mokoka Butcher · Vanderbijlpark SE5, 1911, Gauteng, South Africa*  
+*© 2026 Mokoka Butcher. All rights reserved.*

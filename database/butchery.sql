@@ -1,5 +1,5 @@
 -- ==========================================================
--- Ubuntu-Butchery - Database Setup
+-- Mokoka Butcher - Database Setup
 -- Import this file in phpMyAdmin (Import tab) or run it in the SQL tab.
 -- ==========================================================
 
