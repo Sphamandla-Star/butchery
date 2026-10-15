@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fresh, quality meat cuts, boerewors, and marinated specials. Browse our products and order online.">
-    <title>Home | Mokoka Butchery</title>
+    <meta name="description" content="Mokoka Butcher — fresh, quality meat cuts, boerewors, and marinated specials in Vanderbijlpark SE5. Browse our products and order online.">
+    <title>Home | Mokoka Butcher</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,86 +16,122 @@
     <!-- Navigation -->
     <header class="site-header">
         <div class="container nav-wrapper">
-            <a href="index.html" class="logo">Mokoka Butchery<span>.</span></a>
+            <a href="index.html" class="logo">Mokoka Butcher<span>.</span></a>
             <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="products.html#cart" class="cart-link">Cart <span class="cart-count">0</span></a></li>
+                    <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                    <li class="has-dropdown">
+                        <a href="products.html" aria-haspopup="true" aria-expanded="false" data-i18n="nav.products">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="products.html#beef" data-i18n="nav.beef">Beef</a></li>
+                            <li><a href="products.html#pork-chops" data-i18n="nav.pork">Pork</a></li>
+                            <li><a href="products.html#chicken" data-i18n="nav.chicken">Chicken</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+                    <li><a href="products.html#cart" class="cart-link"><span data-i18n="nav.cart">Cart</span> <span class="cart-count">0</span></a></li>
                 </ul>
             </nav>
+            <button id="lang-toggle" class="lang-btn" aria-label="Switch to isiZulu" data-lang="en">ZU</button>
         </div>
     </header>
 
     <!-- Hero -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Fresh Meat, Cut Right</h1>
-            <p>Quality beef, pork, lamb, chicken and homemade specials, prepared daily by our experienced butchers.</p>
+            <h1 data-i18n="home.hero.h1">Fresh Meat, Cut Right</h1>
+            <p data-i18n="home.hero.p">Quality beef, pork, lamb, chicken and homemade specials, prepared daily by our experienced butchers.</p>
             <div class="hero-buttons">
-                <a href="products.html" class="btn btn-primary">Browse Products</a>
-                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                <a href="products.html" class="btn btn-primary" data-i18n="home.hero.browse">Browse Products</a>
+                <a href="contact.html" class="btn btn-outline" data-i18n="home.hero.contact">Contact Us</a>
             </div>
         </div>
     </section>
 
-    <!-- Highlights -->
+    <!-- Why Choose Us -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
+            <h2 class="section-title" data-i18n="home.why.title">Why Choose Us</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">&#127861;</div>
-                    <h3>Fresh Daily</h3>
-                    <p>Our meat is delivered fresh every morning and cut to order.</p>
+                    <h3 data-i18n="home.why.fresh.h">Fresh Daily</h3>
+                    <p data-i18n="home.why.fresh.p">Our meat is delivered fresh every morning and cut to order.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">&#9878;</div>
-                    <h3>Weighed to Your Needs</h3>
-                    <p>Choose the exact weight you want, from 500g to bulk orders.</p>
+                    <h3 data-i18n="home.why.weigh.h">Weighed to Your Needs</h3>
+                    <p data-i18n="home.why.weigh.p">Choose the exact weight you want, from 500g to bulk orders.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">&#128101;</div>
-                    <h3>Expert Butchers</h3>
-                    <p>Ask us for advice on cuts, cooking methods, or special orders.</p>
+                    <h3 data-i18n="home.why.expert.h">Expert Butchers</h3>
+                    <p data-i18n="home.why.expert.p">Ask us for advice on cuts, cooking methods, or special orders.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured -->
+    <!-- Services List -->
     <section class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Popular Right Now</h2>
+            <h2 class="section-title" data-i18n="home.services.title">Our Services</h2>
+            <ul class="services-list">
+                <li data-i18n="home.services.custom">Custom cuts to your specification</li>
+                <li data-i18n="home.services.bulk">Bulk orders for events and catering</li>
+                <li data-i18n="home.services.marinated">Marinated meats prepared in-store</li>
+                <li data-i18n="home.services.advice">Free butchery advice and cooking tips</li>
+                <li data-i18n="home.services.order">Online order requests with WhatsApp confirmation</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="home.popular.title">Popular Right Now</h2>
             <div class="featured-grid">
                 <article class="featured-card">
-                    <img src="images/boerewors.jpg" alt="Homemade boerewors">
+                    <img src="images/boerewors.jpg" alt="Homemade boerewors from Mokoka Butcher">
                     <div class="featured-body">
                         <h3>Homemade Boerewors</h3>
                         <p>Our family recipe, spiced just right.</p>
-                        <a href="products.html#boerewors">View product &rarr;</a>
+                        <a href="products.html#boerewors" data-i18n="home.viewproduct">View product &rarr;</a>
                     </div>
                 </article>
                 <article class="featured-card">
-                    <img src="images/ribeye.jpg" alt="Beef ribeye steak">
+                    <img src="images/ribeye.jpg" alt="Beef ribeye steak from Mokoka Butcher">
                     <div class="featured-body">
                         <h3>Beef Ribeye</h3>
                         <p>Well marbled and tender, ideal for braai.</p>
-                        <a href="products.html#beef">View product &rarr;</a>
+                        <a href="products.html#beef" data-i18n="home.viewproduct">View product &rarr;</a>
                     </div>
                 </article>
                 <article class="featured-card">
-                    <img src="images/chicken.jpg" alt="Fresh whole chicken">
+                    <img src="images/chicken-counter-display.jpg" alt="Fresh whole chicken from Mokoka Butcher">
                     <div class="featured-body">
                         <h3>Fresh Chicken</h3>
                         <p>Whole birds and portions, cut to your request.</p>
-                        <a href="products.html#chicken">View product &rarr;</a>
+                        <a href="products.html#chicken" data-i18n="home.viewproduct">View product &rarr;</a>
                     </div>
                 </article>
             </div>
+        </div>
+    </section>
+
+    <!-- Useful Links -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Useful Links</h2>
+            <ul class="useful-links-list">
+                <li><a href="https://www.samic.co.za" target="_blank" rel="noopener noreferrer">SAMIC — South African Meat Industry Company</a></li>
+                <li><a href="https://www.daff.gov.za/daffweb3/Branches/Food-Safety-Quality-Assurance" target="_blank" rel="noopener noreferrer">DALRRD — Food Safety &amp; Quality Assurance</a></li>
+                <li><a href="https://www.braai.com/braai-recipes/" target="_blank" rel="noopener noreferrer">Braai.com — South African Braai Recipes</a></li>
+                <li><a href="https://www.food24.com/recipes/meat/" target="_blank" rel="noopener noreferrer">Food24 — Meat Recipes &amp; Cooking Tips</a></li>
+                <li><a href="https://www.nicd.ac.za/food-safety/" target="_blank" rel="noopener noreferrer">NICD — Food Safety in South Africa</a></li>
+            </ul>
         </div>
     </section>
 
@@ -99,31 +139,38 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <h3>Mokoka Butchery</h3>
+                <h3>Mokoka Butcher</h3>
                 <p>Quality meat, served with care.</p>
+                <address>
+                    Vanderbijlpark SE5, 1911<br>
+                    Gauteng, South Africa<br>
+                    <a href="tel:+27719428917">071 942 8917</a>
+                </address>
             </div>
             <div>
-                <h3>Quick Links</h3>
+                <h3 data-i18n="footer.quicklinks">Quick Links</h3>
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
                 </ul>
             </div>
             <div>
-                <h3>Follow Us</h3>
+                <h3 data-i18n="footer.followus">Follow Us</h3>
                 <ul class="social-links">
-                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
-                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-                    <li><a href="#" target="_blank" rel="noopener">WhatsApp</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61595502146945" target="_blank" rel="noopener noreferrer" aria-label="Mokoka Butcher on Facebook">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/mokokabutchery/" target="_blank" rel="noopener noreferrer" aria-label="Mokoka Butcher on Instagram">Instagram</a></li>
+
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Mokoka Butchery . All rights reserved.</p>
+            <p data-i18n="footer.copyright">&copy; 2026 Mokoka Butcher. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 </html>
