@@ -252,9 +252,9 @@ The site supports **English** and **isiZulu**. A toggle button (EN / ZU) in the 
 
 ## Known TODOs before submission
 
-- [ ] Add real email address to `contact.html` (replace the TODO comment)
-- [ ] Add real Facebook page URL to all footers (replace TODO comment)
-- [ ] Add real Instagram page URL to all footers (replace TODO comment)
+- [x] Add real email address to `contact.html`
+- [x] Add real Facebook page URL to all footers
+- [x] Add real Instagram page URL to all footers
 - [ ] Siphamandla to review all Zulu strings in `js/lang.js` (marked ⚠️ UNSURE)
 
 ---
