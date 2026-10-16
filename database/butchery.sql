@@ -1,5 +1,5 @@
 -- ==========================================================
--- Mokoka Butcher - Database Setup
+-- Mokoka Butchery - Database Setup
 -- Import this file in phpMyAdmin (Import tab) or run it in the SQL tab.
 -- ==========================================================
 
@@ -60,12 +60,12 @@ CREATE TABLE IF NOT EXISTS messages (
 -- Starter product list. The prices are examples: change them to your real prices.
 -- Keep these in line with the data-price-per-kg values in products.html.
 INSERT INTO products (id, name, price_per_kg, is_active) VALUES
-    ('boerewors',   'Homemade Boerewors', 120.00, 1),
+    ('boerewors',   'Homemade Boerewors', 110.00, 1),
     ('ribeye',      'Beef Ribeye',        250.00, 1),
-    ('beef-mince',  'Beef Mince',         139.00, 1),
-    ('pork-chops',  'Pork Chops',         110.00, 1),
-    ('lamb-chops',  'Lamb Chops',         240.00, 1),
-    ('chicken',     'Whole Chicken',       75.00, 1)
+    ('beef-mince',  'Beef Mince',          95.00, 1),
+    ('pork-chops',  'Pork Chops',         105.00, 1),
+    ('lamb-chops',  'Lamb Chops',         170.00, 1),
+    ('chicken',     'Whole Chicken',       70.00, 1)
 ON DUPLICATE KEY UPDATE name = VALUES(name);
 
 -- Admin users table (used by admin/login.php)

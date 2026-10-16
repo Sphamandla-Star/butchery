@@ -208,7 +208,7 @@ function renderPage(string $title, string $content): void
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>' . e($title) . ' | Mokoka Butcher</title>
+    <title>' . e($title) . ' | Mokoka Butchery</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .result-box { max-width: 720px; margin: 60px auto; background: #fff; padding: 36px; border-radius: 10px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
