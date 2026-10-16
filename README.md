@@ -235,18 +235,20 @@ Mokoka Butchery
 
 ## Languages
 
-The site supports **English** and **isiZulu**. A toggle button (EN / ZU) in the nav switches languages. The user's choice is remembered in `localStorage`. All Zulu strings are in [`js/lang.js`](js/lang.js) — phrases marked `⚠️ UNSURE` must be reviewed by the Zulu-speaking team member (Siphamandla) before submission.
+The site supports **English** and **isiZulu**. A toggle button (EN / ZU) in the nav switches languages. The user's choice is remembered in `localStorage`. All Zulu strings are in [`js/lang.js`](js/lang.js) and have been reviewed and confirmed by Siphamandla.
 
 ---
 
 ## Team
 
-| Name | Role |
-|---|---|
-| Siphamandla | Owner & Head Butcher |
-| Oratilwe | Co-owner & Vice Manager |
-| Prudence | Operations Manager |
-| Esnathi | Sales & Customer Service Manager |
+| Name | Business Role | Development Task |
+|---|---|---|
+| Esnathi | Sales & Customer Service Manager | Home page (`index.html`) and About Us page (`about.html`) |
+| Oratilwe | Co-owner & Vice Manager | Products page — product cards, cart, and live pricing (`products.html`, `js/script.js` pricing & cart) |
+| Siphamandla | Owner & Head Butcher | Contact page (`contact.html`) and isiZulu translation review |
+| Sphamandla | Owner & Head Butcher | Database schema and order handling (`database/butchery.sql`, `php/submit_order.php`, `php/db.php`) |
+| Prudence | Operations Manager | Admin panel (`admin/`) and style guide / global CSS (`style-guide.html`, `css/style.css`) |
+| Humphrey | Customer Manager | isiZulu language toggle (`js/lang.js`, all `data-i18n` attributes) |
 
 ---
 
@@ -255,7 +257,7 @@ The site supports **English** and **isiZulu**. A toggle button (EN / ZU) in the 
 - [x] Add real email address to `contact.html`
 - [x] Add real Facebook page URL to all footers
 - [x] Add real Instagram page URL to all footers
-- [ ] Siphamandla to review all Zulu strings in `js/lang.js` (marked ⚠️ UNSURE)
+- [x] Siphamandla to review all Zulu strings in `js/lang.js` (marked ⚠️ UNSURE)
 
 ---
 
