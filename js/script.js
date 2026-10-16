@@ -1,5 +1,5 @@
 /* ==========================================================
-   Mokoka Butcher - Main JavaScript
+   Mokoka Butchery - Main JavaScript
    Features: mobile menu, dropdown nav, product filter,
    weight-based pricing, quantities, cart (saved in the browser),
    order and contact forms

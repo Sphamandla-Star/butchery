@@ -1,5 +1,5 @@
 -- ==========================================================
--- Mokoka Butcher - Database Setup
+-- Mokoka Butchery - Database Setup
 -- Import this file in phpMyAdmin (Import tab) or run it in the SQL tab.
 -- ==========================================================
 

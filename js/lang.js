@@ -1,5 +1,5 @@
 /* ==========================================================
-   Mokoka Butcher — Language Toggle (English / isiZulu)
+   Mokoka Butchery — Language Toggle (English / isiZulu)
    All translatable strings live here.
    Zulu translations flagged ⚠️ need review by Siphamandla.
    ========================================================== */
@@ -21,7 +21,7 @@ const translations = {
         /* --- Footer --- */
         "footer.quicklinks":  "Quick Links",
         "footer.followus":    "Follow Us",
-        "footer.copyright":   "© 2026 Mokoka Butcher. All rights reserved.",
+        "footer.copyright":   "© 2026 Mokoka Butchery. All rights reserved.",
 
         /* --- Home page --- */
         "home.hero.h1":       "Fresh Meat, Cut Right",
@@ -48,7 +48,7 @@ const translations = {
         "about.header.h1":    "About Us",
         "about.header.p":     "Family-run, community-focused, and proud of every cut.",
         "about.story.h2":     "Our Story",
-        "about.story.p1":     "Mokoka Butcher started with a simple idea: give our neighbours quality meat at fair prices, cut with care. Since opening our doors, we have grown into a trusted local butchery known for fresh cuts, homemade boerewors, and marinated specials.",
+        "about.story.p1":     "Mokoka Butchery started with a simple idea: give our neighbours quality meat at fair prices, cut with care. Since opening our doors, we have grown into a trusted local butchery known for fresh cuts, homemade boerewors, and marinated specials.",
         "about.story.p2":     "Every morning our butchers prepare the day's stock by hand, so what you see in the display is what you get at the counter.",
         "about.values.title": "What We Stand For",
         "about.values.q.h":   "Quality",
@@ -109,7 +109,7 @@ const translations = {
 
         /* --- Sitemap page --- */
         "sitemap.title":    "Sitemap",
-        "sitemap.subtitle": "All pages on Mokoka Butcher",
+        "sitemap.subtitle": "All pages on Mokoka Butchery",
     },
 
     zu: {
@@ -132,7 +132,7 @@ const translations = {
         /* ⚠️ UNSURE */
         "footer.quicklinks":  "Izixhumanisi Ezisheshayo",
         "footer.followus":    "Silandele",
-        "footer.copyright":   "© 2026 Mokoka Butcher. Wonke amalungelo agodliwe.",
+        "footer.copyright":   "© 2026 Mokoka Butchery. Wonke amalungelo agodliwe.",
 
         /* --- Home page --- */
         /* ⚠️ UNSURE: literal = "Inyama Eluhlaza, Ehlinzekiwe Kahle" */
@@ -169,7 +169,7 @@ const translations = {
         "about.header.p":     "Iphephelo lemindeni, igxile emphakathini, futhi izikhukhu ngalo lonke ucwecwe.",
         "about.story.h2":     "Indaba Yethu",
         /* ⚠️ UNSURE */
-        "about.story.p1":     "I-Mokoka Butcher yaqala ngomqondo olula: nika omakhelwane bethu inyama enesimo enhle ngentengo efanele, ihlinzekiwe ngokunakekela. Kusukela sivule izicabha zethu, sikhule sasiwa isitolo senyama sasekhaya esethenjwa, esaziwa ngeziqu ezintaze, iboerewors ezenziwe yithi, nezinto ezilungiswe ngezinhlanzi.",
+        "about.story.p1":     "I-Mokoka Butchery yaqala ngomqondo olula: nika omakhelwane bethu inyama enesimo enhle ngentengo efanele, ihlinzekiwe ngokunakekela. Kusukela sivule izicabha zethu, sikhule sasiwa isitolo senyama sasekhaya esethenjwa, esaziwa ngeziqu ezintaze, iboerewors ezenziwe yithi, nezinto ezilungiswe ngezinhlanzi.",
         /* ⚠️ UNSURE */
         "about.story.p2":     "Njalo ekuseni izinyamazane zethu zilungiselela isitoko sosuku ngezandla, ngakho lokho okubona ekuboniseni yilokho okutholayo ekaunteni.",
         "about.values.title": "Lokho Esikhululekile Ngakho",
@@ -246,7 +246,7 @@ const translations = {
         /* --- Sitemap page --- */
         "sitemap.title":    "Isithombe Sesayithi",
         /* ⚠️ UNSURE */
-        "sitemap.subtitle": "Yonke amakhasi e-Mokoka Butcher",
+        "sitemap.subtitle": "Yonke amakhasi e-Mokoka Butchery",
     }
 };
 

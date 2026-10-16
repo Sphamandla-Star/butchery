@@ -1,4 +1,4 @@
-# Mokoka Butcher
+# Mokoka Butchery
 
 > A full-stack butchery website — Web Development 3.2 assignment  
 > **Vaal University of Technology · Due 16 October 2026**
@@ -25,7 +25,7 @@
 
 ## Project Overview
 
-Mokoka Butcher is a responsive, bilingual (English / isiZulu) multi-page website for a local butchery in Vanderbijlpark SE5, Gauteng. Customers can browse meat products, calculate prices by weight, build an order cart, and send enquiries — all from the browser. The site runs on a local XAMPP server.
+Mokoka Butchery is a responsive, bilingual (English / isiZulu) multi-page website for a local butchery in Vanderbijlpark SE5, Gauteng. Customers can browse meat products, calculate prices by weight, build an order cart, and send enquiries — all from the browser. The site runs on a local XAMPP server.
 
 ---
 
@@ -33,7 +33,7 @@ Mokoka Butcher is a responsive, bilingual (English / isiZulu) multi-page website
 
 | Field | Value |
 |---|---|
-| **Business name** | Mokoka Butcher |
+| **Business name** | Mokoka Butchery |
 | **Address** | Vanderbijlpark SE5, 1911, Gauteng, South Africa |
 | **Phone** | 071 942 8917 |
 | **WhatsApp** | [wa.me/27719428917](https://wa.me/27719428917) |
@@ -72,7 +72,7 @@ Mokoka Butcher is a responsive, bilingual (English / isiZulu) multi-page website
 ## Folder Structure
 
 ```
-ubuntu-butchery/
+butchery/
 │
 ├── index.html          Home page
 ├── about.html          About Us
@@ -215,7 +215,7 @@ See [`style-guide.html`](style-guide.html) for the full visual reference.
 ## Sitemap
 
 ```
-Mokoka Butcher
+Mokoka Butchery
 │
 ├── Home                index.html
 ├── About Us            about.html
@@ -259,5 +259,5 @@ The site supports **English** and **isiZulu**. A toggle button (EN / ZU) in the 
 
 ---
 
-*Mokoka Butcher · Vanderbijlpark SE5, 1911, Gauteng, South Africa*  
-*© 2026 Mokoka Butcher. All rights reserved.*
+*Mokoka Butchery · Vanderbijlpark SE5, 1911, Gauteng, South Africa*  
+*© 2026 Mokoka Butchery. All rights reserved.*
