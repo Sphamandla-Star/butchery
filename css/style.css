@@ -958,6 +958,13 @@ h1, h2, h3 {
     color: var(--muted);
 }
 
+.video-credit {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin: -10px 20px 16px !important;
+    font-style: italic;
+}
+
 /* ---------- Language Toggle Button ---------- */
 .lang-btn {
     background: transparent;

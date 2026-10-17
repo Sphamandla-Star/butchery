@@ -36,7 +36,6 @@ Mokoka Butchery is a responsive, bilingual (English / isiZulu) multi-page websit
 | **Business name** | Mokoka Butchery |
 | **Address** | Vanderbijlpark SE5, 1911, Gauteng, South Africa |
 | **Phone** | 071 942 8917 |
-| **WhatsApp** | [wa.me/27719428917](https://wa.me/27719428917) |
 | **Languages** | English and isiZulu |
 
 ---
@@ -243,7 +242,7 @@ The site supports **English** and **isiZulu**. A toggle button (EN / ZU) in the 
 
 | Name | Business Role | Development Task |
 |---|---|---|
-| Esnathi | Sales & Customer Service Manager | Home page (`index.html`) and About Us page (`about.html`) |
+| Esnathi | Sales Manager | Home page (`index.html`) and About Us page (`about.html`) |
 | Oratilwe | Co-owner & Vice Manager | Products page — product cards, cart, and live pricing (`products.html`, `js/script.js` pricing & cart) |
 | Siphamandla | Owner & Head Butcher | Contact page (`contact.html`) and isiZulu translation review |
 | Sphamandla | Owner & Head Butcher | Database schema and order handling (`database/butchery.sql`, `php/submit_order.php`, `php/db.php`) |

@@ -77,7 +77,30 @@ CREATE TABLE IF NOT EXISTS admins (
 
 -- Demo admin account.
 -- Username: admin  |  Password: admin123  (DEMO ONLY — change before going live)
--- Hash generated with: password_hash('admin123', PASSWORD_DEFAULT)
+-- Hash generated with: password_hash('admin123', PASSWORD_DEFAULT) on this machine
+DELETE FROM admins WHERE username = 'admin';
 INSERT INTO admins (username, password_hash) VALUES
-    ('admin', '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7XuurNSm')
-ON DUPLICATE KEY UPDATE username = VALUES(username);
+    ('admin', '$2y$10$m8Uw.kzJPEVdJ1YUlohFj.OxkXwcv0G3at1yBjC7Q8z4AWwigzCKC');
+
+-- ==========================================================
+-- Demo data for admin panel screenshots
+-- ==========================================================
+
+INSERT INTO orders (order_ref, customer_name, phone, email, collection_type, notes, total, status, created_at) VALUES
+    ('ORD-2026-0001', 'Thabo Mokoena',  '0712345678', 'thabo@example.com',   'collection', 'Please cut the ribeye thick.',   320.50, 'new',       '2026-10-01 09:15:00'),
+    ('ORD-2026-0002', 'Nomsa Dlamini',  '0834567890', 'nomsa@example.com',   'delivery',   'Deliver before 12pm please.',    187.00, 'confirmed', '2026-10-02 11:30:00'),
+    ('ORD-2026-0003', 'Sipho Nkosi',    '0761239876', '',                    'collection', '',                               94.50,  'completed', '2026-10-03 08:45:00');
+
+INSERT INTO order_items (order_id, product_id, product_name, grams, qty, price_per_kg, line_total) VALUES
+    (1, 'ribeye',     'Beef Ribeye',        1000, 1, 250.00, 250.00),
+    (1, 'boerewors',  'Homemade Boerewors',  500, 1, 110.00,  55.00),
+    (1, 'beef-mince', 'Beef Mince',          500, 1,  95.00,  47.50),
+    (2, 'pork-chops', 'Pork Chops',         1000, 1, 105.00, 105.00),
+    (2, 'chicken',    'Whole Chicken',      1000, 1,  70.00,  70.00),
+    (2, 'beef-mince', 'Beef Mince',          500, 1,  95.00,  47.50),
+    (3, 'boerewors',  'Homemade Boerewors', 1000, 1, 110.00, 110.00);
+
+INSERT INTO messages (name, email, phone, subject, message, is_read, created_at) VALUES
+    ('Lerato Khumalo', 'lerato@example.com', '0791234567', 'general',  'Do you deliver to Sebokeng?',                           0, '2026-10-01 10:00:00'),
+    ('John Smith',     'john@example.com',   '0823456789', 'order',    'I placed an order but have not received confirmation.',  0, '2026-10-02 14:20:00'),
+    ('Zanele Motha',   'zanele@example.com', '',           'general',  'What time do you open on Saturdays?',                   1, '2026-10-03 09:05:00');

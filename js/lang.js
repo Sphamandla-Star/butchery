@@ -59,12 +59,12 @@ const translations = {
         "about.values.p.p":   "Clear prices by weight, so you always know exactly what you are paying for.",
         "about.team.title":   "Meet the Team",
         "about.video.title":  "Behind the Counter",
-        "about.video1.h":     "How We Prepare Our Meat",
-        "about.video1.p":     "A look at our daily cutting and preparation process.",
-        "about.video2.h":     "Making Our Boerewors",
-        "about.video2.p":     "Watch our family recipe come together, from mincing to the perfect spice blend.",
-        "about.video3.h":     "Braai Tips from Our Butchers",
-        "about.video3.p":     "Our butchers share their best tips for a perfect South African braai.",
+        "about.video1.h":     "Meat Preparation and Cutting",
+        "about.video1.p":     "A demonstration of meat cutting and preparation techniques.",
+        "about.video2.h":     "Boerewors Making Process",
+        "about.video2.p":     "How boerewors is made, from mincing to spicing.",
+        "about.video3.h":     "South African Braai Tips",
+        "about.video3.p":     "Tips and techniques for a traditional South African braai.",
 
         /* --- Contact page --- */
         "contact.header.h1":  "Contact Us",
@@ -72,8 +72,6 @@ const translations = {
         "contact.visit.h2":   "Visit or Call Us",
         "contact.address.h":  "Address",
         "contact.phone.h":    "Phone",
-        "contact.whatsapp.h": "WhatsApp",
-        "contact.whatsapp.a": "Chat with us on WhatsApp",
         "contact.email.h":    "Email",
         "contact.hours.h":    "Opening Hours",
         "contact.hours.mf":   "Monday to Friday",
@@ -149,8 +147,8 @@ const translations = {
         /* ⚠️ UNSURE */
         "home.why.weigh.h":   "Linywa Ngokwedinga Lakho",
         "home.why.weigh.p":   "Khetha isisindo ofuna sona, kusukela ku-500g kuya emiyalweni emkhulu.",
-        /* ⚠️ UNSURE */
-        "home.why.expert.h":  "Izinyamazane Ezinamava",
+        /* ⚠️ REVIEW */
+        "home.why.expert.h":  "Abahlinzi Bangempela",
         "home.why.expert.p":  "Siza wena ngolwazi lweziqu, izindlela zokupheka, noma imiyalo ekhethekile.",
         /* ⚠️ UNSURE */
         "home.popular.title": "Okudumile Manje",
@@ -166,12 +164,12 @@ const translations = {
         /* --- About page --- */
         /* ⚠️ UNSURE */
         "about.header.h1":    "Mayelana Nathi",
-        "about.header.p":     "Iphephelo lemindeni, igxile emphakathini, futhi izikhukhu ngalo lonke ucwecwe.",
+        "about.header.p":     "Iphephelo lemindeni, igxile emphakathini, futhi sizikhiqiza ngalo lonke ucwecwe.",
         "about.story.h2":     "Indaba Yethu",
         /* ⚠️ UNSURE */
-        "about.story.p1":     "I-Mokoka Butchery yaqala ngomqondo olula: nika omakhelwane bethu inyama enesimo enhle ngentengo efanele, ihlinzekiwe ngokunakekela. Kusukela sivule izicabha zethu, sikhule sasiwa isitolo senyama sasekhaya esethenjwa, esaziwa ngeziqu ezintaze, iboerewors ezenziwe yithi, nezinto ezilungiswe ngezinhlanzi.",
+        "about.story.p1":     "I-Mokoka Butchery yaqala ngomqondo olula: nika omakhelwane bethu inyama enesimo enhle ngentengo efanele, ihlinziwe ngokunakekela. Kusukela sivule izicabha zethu, sikhule sasiwa isitolo senyama sasekhaya esethenjwa, esaziwa ngeziqu ezintaze, iboerewors ezenziwe yithi, nezinto ezilungiswe ngezinhlanzi.",
         /* ⚠️ UNSURE */
-        "about.story.p2":     "Njalo ekuseni izinyamazane zethu zilungiselela isitoko sosuku ngezandla, ngakho lokho okubona ekuboniseni yilokho okutholayo ekaunteni.",
+        "about.story.p2":     "Njalo ekuseni abahlinzi bethu balungiselela isitoko sosuku ngezandla, ngakho lokho okubona ekuboniseni yilokho okutholayo ekaunteni.",
         "about.values.title": "Lokho Esikhululekile Ngakho",
         "about.values.q.h":   "Ikhwalithi",
         /* ⚠️ UNSURE */
@@ -184,15 +182,14 @@ const translations = {
         "about.values.p.p":   "Amantengo acaca ngokwesisindo, ngakho uhlala wazi kahle lokho okukhokha kona.",
         "about.team.title":   "Hlangana Nethimba",
         "about.video.title":  "Ngemuva Kokaunta",
-        "about.video1.h":     "Indlela Esilungiselela Ngayo Inyama Yethu",
-        /* ⚠️ UNSURE */
-        "about.video1.p":     "Ukubheka inqubo yethu yansuku zonke yokuhlinza nokuhlunga.",
-        "about.video2.h":     "Ukwenza Iboerewors Yethu",
-        /* ⚠️ UNSURE */
-        "about.video2.p":     "Buka iresiphi yomndeni wethu ihlangana, kusukela ekucoleni kuya kulungelaniswa kwezilawulo efanele.",
-        "about.video3.h":     "Izeluleko Zebraai Kusukela Kwizinyamazane Zethu",
-        /* ⚠️ UNSURE */
-        "about.video3.p":     "Izinyamazane zethu zabelana ngezindlela zazo ezinhle kakhulu zebraai ephelelekile yaseNingizimu Afrika.",
+        /* ⚠️ REVIEW: video headings changed to neutral descriptions */
+        "about.video1.h":     "Ukulungiselela Nokuhlinza Inyama",
+        "about.video1.p":     "Ukuboniswa kwezindlela zokuhlinza nokulungiselela inyama.",
+        "about.video2.h":     "Inqubo Yokwenza Iboerewors",
+        "about.video2.p":     "Ukwenziwa kweboerewors, kusukela ekucoleni kuya ekuhlanganyeni kwezikhali.",
+        "about.video3.h":     "Izeluleko Zebraai EzeNingizimu Afrika",
+        /* ⚠️ REVIEW */
+        "about.video3.p":     "Izeluleko nezindlela zebraai yendabuko yaseNingizimu Afrika.",
 
         /* --- Contact page --- */
         /* ⚠️ UNSURE */
@@ -201,9 +198,6 @@ const translations = {
         "contact.visit.h2":   "Sivakathelele Noma Usishayele",
         "contact.address.h":  "Ikheli",
         "contact.phone.h":    "Ucingo",
-        "contact.whatsapp.h": "WhatsApp",
-        /* ⚠️ UNSURE */
-        "contact.whatsapp.a": "Xoxa Nathi ku-WhatsApp",
         "contact.email.h":    "I-imeyili",
         /* ⚠️ UNSURE */
         "contact.hours.h":    "Amahora Okuvula",

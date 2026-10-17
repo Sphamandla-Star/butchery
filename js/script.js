@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setupProductFilter();
     setupProducts();
     setupCart();
+    setupDeliveryLabel();
     setupOrderForm();
     setupContactForm();
     highlightProductFromHash();
@@ -261,6 +262,30 @@ function renderCart() {
     }).join("");
 
     totalEl.textContent = formatMoney(grandTotal);
+}
+
+/* ---------- Delivery address label toggle ---------- */
+
+function setupDeliveryLabel() {
+    const collectionSelect = document.getElementById("collection");
+    const notesLabel = document.getElementById("notes-label");
+    const notesArea = document.getElementById("notes");
+    if (!collectionSelect || !notesLabel || !notesArea) return;
+
+    const update = () => {
+        if (collectionSelect.value === "delivery") {
+            notesLabel.textContent = "Delivery Address *";
+            notesArea.placeholder = "e.g. 12 Main Street, Vanderbijlpark SE5, 1911";
+            notesArea.setAttribute("required", "");
+        } else {
+            notesLabel.textContent = "Special Instructions";
+            notesArea.placeholder = "e.g. cut into cubes, thinner slices";
+            notesArea.removeAttribute("required");
+        }
+    };
+
+    collectionSelect.addEventListener("change", update);
+    update(); // run on load in case of browser autofill
 }
 
 /* ---------- Order form (Products page) ---------- */
