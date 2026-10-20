@@ -246,7 +246,8 @@ The site supports **English** and **isiZulu**. A toggle button (EN / ZU) in the 
 | Siphamandla | Owner & Head Butcher |
 | Oratilwe | Co-owner & Vice Manager |
 | Prudence | Operations Manager |
-| Esnathi | Sales & Customer Service Manager |
+| Esnathi | Sales |
+| Humphrey| Customer Service Manager |
 
 ---
 
@@ -255,7 +256,7 @@ The site supports **English** and **isiZulu**. A toggle button (EN / ZU) in the 
 - [x] Add real email address to `contact.html`
 - [x] Add real Facebook page URL to all footers
 - [x] Add real Instagram page URL to all footers
-- [ ] Siphamandla to review all Zulu strings in `js/lang.js` (marked ⚠️ UNSURE)
+- [x] Siphamandla to review all Zulu strings in `js/lang.js` (marked ⚠️ UNSURE)
 
 ---
 
